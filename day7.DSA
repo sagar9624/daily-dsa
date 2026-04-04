@@ -1,0 +1,13 @@
+def SerachInsertPosition(arr,x,n):
+    low,high,ans=0,n-1,n 
+    while(low<=high):
+        mid=(low+high)//2 
+        if(arr[mid]>=x):
+            ans=mid 
+            high=mid-1 
+        else:
+            low=mid+1 
+    return ans 
+n,x=map(int,input().split())
+arr=list(map(int,input().split()))
+print(SerachInsertPosition(arr,x,n))

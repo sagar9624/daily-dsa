@@ -1,0 +1,30 @@
+import math 
+
+def sum_division(arr,n,k):
+    sum=0 
+    for i in range(n):
+      sum+=math.ceil(arr[i]/k) 
+    return sum 
+
+def minimum_positive(arr,n,limit):
+      low=1
+      high=max(arr)
+      ans=high 
+      while(low<=high):
+          mid=(low+high)//2 
+          if sum_division(arr,n,mid)<=limit:
+                ans=mid 
+                high=mid-1 
+          else:
+                low=mid+1 
+      return ans 
+
+def main():
+    n,k=map(int,input().split())
+    arr=list(map(int,input().split())
+    print(minimum_positive(arr,n,k)
+
+if __name__=="__main__":
+    main()
+      
+            

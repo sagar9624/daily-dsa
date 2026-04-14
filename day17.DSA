@@ -1,0 +1,18 @@
+def print_subsequences(i, v, arr, n):
+    if i >= n:
+        print(*v)
+        return
+
+    # Not pick
+    print_subsequences(i + 1, v, arr, n)
+
+    # Pick
+    v.append(arr[i])
+    print_subsequences(i + 1, v, arr, n)
+    v.pop()
+
+if __name__ == "__main__":
+    n = int(input())
+    arr = list(map(int, input().split()))
+    v = []
+    print_subsequences(0, v, arr, n)

@@ -1,0 +1,20 @@
+def subsequence_with_sum_k(i, v, current_sum, arr, n, k):
+    if i >= n:
+        if current_sum == k:
+            print(*v)
+        return
+
+    # Pick
+    v.append(arr[i])
+    current_sum += arr[i]
+    subsequence_with_sum_k(i + 1, v, current_sum, arr, n, k)
+
+    # Not pick
+    v.pop()
+    current_sum -= arr[i]
+    subsequence_with_sum_k(i + 1, v, current_sum, arr, n, k)
+
+if __name__ == "__main__":
+    n, k = map(int, input().split())
+    arr = list(map(int, input().split()))
+    subsequence_with_sum_k(0, [], 0, arr, n, k)

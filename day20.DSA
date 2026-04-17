@@ -1,0 +1,17 @@
+def f(n):
+    if n == 0: return 1
+    if n == 1: return 1
+    prior_2 = 1
+    prior_1 = 1
+    for i in range(2, n + 1):
+        cur = prior_1 + prior_2
+        prior_2 = prior_1
+        prior_1 = cur
+    return cur
+
+def main():
+    n = int(input())
+    print(f(n))
+
+if __name__ == "__main__":
+    main()

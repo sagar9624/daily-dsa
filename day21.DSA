@@ -1,0 +1,27 @@
+def max_path_sum(grid):
+    m = len(grid)
+    n = len(grid[0])
+    prev = [0] * n
+    cur = [0] * n
+    for i in range(m - 1, -1, -1):
+        for j in range(n):
+            if i == m - 1:
+                cur[j] = grid[m - 1][j]
+            else:
+                left_d = float('-inf')
+                right_d = float('-inf')
+                if j > 0:
+                    left_d = prev[j - 1]
+                down = prev[j]
+                if j <= n-2:
+                    right_d = prev[j + 1]
+                cur[j] = grid[i][j] + max(left_d, down, right_d)
+        prev = cur.copy()
+    return max(cur)
+
+if __name__ == "__main__":
+    m, n = map(int, input().split())
+    grid = [list(map(int, input().split())) for _ in range(m)]
+
+    result = max_path_sum(grid)
+    print(result)

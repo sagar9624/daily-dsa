@@ -1,0 +1,45 @@
+def max_chocolates(m, n, grid):
+    cur = [[0] * n for _ in range(n)]
+    prev = [[0] * n for _ in range(n)]
+    for i in range(m - 1, -1, -1):
+        for j1 in range(n):
+            for j2 in range(n):
+                if i == m - 1:
+                    if j1 == j2:
+                        cur[j1][j2] = grid[i][j1]
+                    else:
+                        cur[j1][j2] = grid[i][j1] + grid[i][j2]
+                else:
+                    if j1 == j2:
+                        grid_value = grid[i][j1]
+                    else:
+                        grid_value = grid[i][j1] + grid[i][j2]
+                    x = [float('-inf')] * 9
+                    if j1 - 1 >= 0 and j2 - 1 >= 0:
+                        x[0] = prev[j1 - 1][j2 - 1]
+                    if j1 - 1 >= 0:
+                        x[1] = prev[j1 - 1][j2]
+                    if j1 - 1 >= 0 and j2 + 1 <= n - 1:
+                        x[2] = prev[j1 - 1][j2 + 1]
+                    if j2 - 1 >= 0:
+                        x[3] = prev[j1][j2 - 1]
+                    x[4] = prev[j1][j2]
+                    if j2 + 1 <= n - 1:
+                        x[5] = prev[j1][j2 + 1]
+                    if j1 + 1 <= n - 1 and j2 - 1 >= 0:
+                        x[6] = prev[j1 + 1][j2 - 1]
+                    if j1 + 1 <= n - 1:
+                        x[7] = prev[j1 + 1][j2]
+                    if j1 + 1 <= n - 1 and j2 + 1 <= n - 1:
+                        x[8] = prev[j1 + 1][j2 + 1]
+                    cur[j1][j2] = max(x) + grid_value
+        prev = [row[:] for row in cur]
+    return cur[0][n - 1]
+
+def main():
+    m, n = map(int, input().split())
+    grid = [list(map(int, input().split())) for _ in range(m)]
+    print(max_chocolates(m, n, grid))
+
+if __name__ == "__main__":
+    main()

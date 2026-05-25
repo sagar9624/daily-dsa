@@ -1,4 +1,3 @@
-import collections from deque
 def dfs(curr, adj, visited, path, ans):
     visited[curr] = 1
     path[curr] = 1

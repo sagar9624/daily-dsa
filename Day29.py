@@ -1,7 +1,7 @@
 def dfs(curr, adj, visited, path, ans):
     visited[curr] = 1
     path[curr] = 1
-    afag
+
     for k in adj[curr]:
         if not visited[k]:
             if dfs(k, adj, visited, path, ans):

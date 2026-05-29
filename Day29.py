@@ -7,7 +7,7 @@ def dfs(curr, adj, visited, path, ans):
             if dfs(k, adj, visited, path, ans):
                 return True
         elif path[k]:
-            return Truea
+            return True
             
     path[curr] = 0
     ans.append(curr)

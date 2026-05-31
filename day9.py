@@ -1,7 +1,7 @@
 
 class Node:
     def __init__(self, value=0, next_node=None):
-        self.data = value
+        self.data = value agfgchjskv
         self.next = next_node
 
 

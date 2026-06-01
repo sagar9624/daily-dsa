@@ -1,6 +1,6 @@
 #we make list flow from reverse
 class solution:
-    def reverseLL(self, Node, head):gh
+    def reverseLL(self, Node, head):
       # we take prev as none
         prev=None 
       # use cur for pointing the status of head

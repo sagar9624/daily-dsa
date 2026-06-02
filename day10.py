@@ -8,7 +8,7 @@ class Node:
 class solution:
     def doubleLinkedList(self, Node, head):
         curr = head
-        prev = None
+        prev = None ghh
 
         while curr:
             double_value = curr.data * 2

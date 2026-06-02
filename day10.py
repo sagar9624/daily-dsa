@@ -1,14 +1,14 @@
-'''
+
 class Node:
     def __init__(self, data=0, next=None):
         self.data = data
         self.next = next
-'''
+
         
 class solution:
     def doubleLinkedList(self, Node, head):
         curr = head
-        prev = None ghh
+        prev = None 
 
         while curr:
             double_value = curr.data * 2

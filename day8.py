@@ -14,7 +14,6 @@ def cycleDetection(head):
             return True
     return False
 
-dafgshdj
 def array_to_LL(arr):
     if not arr:
         return None

@@ -3,7 +3,7 @@ class Node:
         self.data = value
         self.next = address
 
-def array_to_LL(arr): adafasdadß
+def array_to_LL(arr): 
     if not arr:
         return None
     head = Node(arr[0])

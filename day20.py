@@ -1,4 +1,4 @@
-class solution:
+class solution:  affs
     def dfs(self,cur,parent,adj,visited):
         visited[cur]=True 
         for i in adj[cur]:

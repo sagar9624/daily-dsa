@@ -3,7 +3,6 @@ class Node:
         self.data = value
         self.next = next_node
 
-"""
 def array_to_LL(arr):
     if not arr:
         return None
@@ -20,7 +19,6 @@ def print_LL(head):
     while temp:
         print(temp.data, end=" ")
         temp = temp.next
-"""
 
 def delete_middle_node(head):
     if not head or not head.next:
@@ -36,11 +34,10 @@ def delete_middle_node(head):
     del slow
     return head
 
-"""
+
 if __name__ == "__main__":
     n = int(input())
     arr = list(map(int, input().split()))
     head = array_to_LL(arr)
     head = delete_middle_node(head)
     print_LL(head)
-"""

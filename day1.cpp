@@ -17,7 +17,7 @@ void selectionSort(int arr[],int n){
 int main(){
   int n;
   cin>>n;
-  int arr[n];
+  int arr[n];   asfasf
   for(int i=0;i<n;i++)cin>>arr[i];
   selectionSort(arr,n);
   for(int i=0;i<n;i++)cout<<arr[i]<<" ";

@@ -2,7 +2,7 @@ class Node:
     def __init__(self, value, next=None):
         self.data = value
         self.next = next
-
+zfa
 def array_to_LL(arr):
     if not arr:
         return None

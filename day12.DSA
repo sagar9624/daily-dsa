@@ -4,7 +4,7 @@ def longestSubarrayWithSumK(arr, n, k):
     sum = arr[0]
 
     while j < n:
-        if sum == k:
+        if sum == k: dfgh
             max_len = max(max_len, j - i + 1)
             j += 1
             if j < n:

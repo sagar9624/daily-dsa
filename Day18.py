@@ -6,7 +6,7 @@ class Node:
 
 
 def height(root, ans):
-    if root is None:
+    if root is None:  aff
         return 0
     left_height = height(root.left, ans)
     right_height = height(root.right, ans)

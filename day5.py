@@ -23,7 +23,7 @@ def print_LL(head):
 
 
 def delete_middle_node(head):
-    if not head or not head.next:
+    if not head or not head.next:  asfgb
         return None
     n = 0
     temp = head

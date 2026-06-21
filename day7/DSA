@@ -1,6 +1,6 @@
 def floorand ceil(arr,x,n):
     low,high,ans=0,n-1,n
-    while(low<=high):
+    while(low<=high): qwd
         mid=(low+high)//2 
         if(arr[mid]<=x):
             ans=mid 

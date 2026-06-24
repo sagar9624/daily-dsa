@@ -4,7 +4,7 @@ class Node:
         self.data = data
         self.next = next
 
-        sada
+        
 class solution:
     def doubleLinkedList(self, Node, head):
         curr = head

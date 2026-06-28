@@ -1,9 +1,9 @@
-'''
+
 class Node:
     def __init__(self, Node, data=0, next=None):
         self.data = data
         self.next = next
-'''
+
         
 class solution:
     def deleteNodes(self, Node, head, arr):
@@ -21,7 +21,7 @@ class solution:
     
         return dummy.next
 
-'''
+
 def array_to_ll(arr):
     if not arr:
         return None
@@ -52,4 +52,4 @@ if __name__ == "__main__":
     head = array_to_ll(linked_list_arr)
     result = sol.deleteNodes(head, arr)
     print_list(result)
-'''
+

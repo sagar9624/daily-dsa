@@ -5,7 +5,7 @@ class Node:
         self.next = next_node
 
 
-def LengthOfCycle(head):
+def LengthOfCycle(head): as
     slow = head
     fast = head
     while fast is not None and fast.next is not None:

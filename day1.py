@@ -3,7 +3,7 @@ class Node:
         self.data = value
         self.next = address
 
-"""
+
 def array_to_LL(arr):
     if not arr: 
         return None
@@ -20,7 +20,7 @@ def print_LL(head):
     while temp:
         print(temp.data, end=" ")
         temp = temp.next
-"""
+
 
 def sortLL0s1s2s(head):
     temp = head
@@ -63,11 +63,10 @@ def sortLL0s1s2s(head):
         return first_1
     return first_2
 
-"""
 if __name__ == "__main__":
     n = int(input())
     arr = list(map(int, input().split()))
     head = array_to_LL(arr)
     head = sortLL0s1s2s(head)
     print_LL(head)
-"""
+

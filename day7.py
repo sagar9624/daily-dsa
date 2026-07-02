@@ -2,7 +2,7 @@ class Node:
     def __init__(self, value=0, next=None):
         self.data = value
         self.next = next
-qwd
+
 def intersectionOfTwoLL(head1, head2):
     temp1 = head1
     temp2 = head2

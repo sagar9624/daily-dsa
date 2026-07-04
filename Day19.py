@@ -4,7 +4,7 @@ class Node:
         self.data = val
         self.left = None
         self.right = None
-
+as
 ans = -1
 def height(root):
     global ans

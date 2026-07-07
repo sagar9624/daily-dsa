@@ -16,4 +16,4 @@ class solution:
             cur=front 
           # we written reverse fromat by prev 
         return prev
-caws
+

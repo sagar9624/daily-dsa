@@ -6,7 +6,7 @@ def missing_number(arr, n):
         xor2 = xor2 ^ (i + 1)
     return xor1 ^ xor2 ^ n
 
-n = int(input()) asd
+n = int(input()) 
 arr = list(map(int, input().split()))
 result = missing_number(arr, n)
 print(result)

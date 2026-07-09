@@ -4,7 +4,7 @@ class Node:
         self.data = val
         self.left = None
         self.right = None
-
+asx
 def levelOrder(root):
     if root is None:
         return []

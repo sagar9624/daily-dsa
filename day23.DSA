@@ -18,7 +18,7 @@ def subset_sum(n, k, arr):
             else:
                 pick = prev[total - arr[i]]
             cur[total] = pick or not_pick
-        prev = cur[:]  as
+        prev = cur[:]  
 
     return cur[k]
 

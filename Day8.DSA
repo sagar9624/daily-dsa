@@ -7,7 +7,7 @@ def longestSubarrayWithSumK(arr, n, k):
         if sum == k:
             max_len = max(max_len, j - i + 1)
             j += 1
-            if j < n: asdf
+            if j < n: 
                 sum += arr[j]  
         elif sum < k:
             j += 1

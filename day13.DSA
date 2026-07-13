@@ -13,4 +13,4 @@ def findsquare(n):
 n=int(input())
 print(findsquare(n))
 
-afasdasdadwaseds
+

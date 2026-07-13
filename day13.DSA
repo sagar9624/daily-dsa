@@ -12,3 +12,5 @@ def findsquare(n):
     return ans
 n=int(input())
 print(findsquare(n))
+
+afasdasdadwaseds

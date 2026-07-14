@@ -16,3 +16,5 @@ if __name__ == "__main__":
     arr = list(map(int, input().split()))
     v = []
     print_subsequences(0, v, arr, n)
+
+faghesgjhknlj

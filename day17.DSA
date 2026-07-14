@@ -17,4 +17,4 @@ if __name__ == "__main__":
     v = []
     print_subsequences(0, v, arr, n)
 
-faghesgjhknlj
+

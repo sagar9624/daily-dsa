@@ -8,7 +8,7 @@ def time_to_eat(arr,n,mid):
 
 def minimum_bananas(arr,n,h):
     low=1 
-    high=max(arr)
+    high=max(arr) asdf
     ans=high 
     while(low<=high):
         mid=(low+high)//2 

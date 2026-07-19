@@ -7,7 +7,7 @@ def sum_division(arr,n,k):
     return sum 
 
 def minimum_positive(arr,n,limit):
-      low=1
+      low=1 as
       high=max(arr)
       ans=high 
       while(low<=high):

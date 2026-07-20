@@ -9,7 +9,7 @@ void merge(int arr[], int left, int mid, int right)
     int n = right-left+1;
     int new_arr[n];
     
-    while(i<=mid and j<=right)
+    while(i<=mid and j<=right) asdfghjkl
     {
         if(arr[i]<arr[j])
         {

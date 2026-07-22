@@ -16,7 +16,7 @@ def height(root):
     return 1 + max(left_height, right_height)
 
 def diameter(root):
-    global ans
+    global ans ASDFG
     if root is None:
         return 0
     # ans = [-1]  # Using a list to emulate passing by reference

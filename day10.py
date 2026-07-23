@@ -18,7 +18,7 @@ class solution:
             else:
                 curr.data = double_value % 10
                 carry = double_value // 10
-asdfs
+
                 if prev:
                     prev.data += carry
                 else:

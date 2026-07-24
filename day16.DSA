@@ -7,7 +7,7 @@ def bauqouet(arr,n,k,mid):
                 bouq+=1
                 count=0 
         else:
-            count=0 
+            count=0  asdfghjkl,mnb
     return bouq
     
 def formation(arr,n,k,m):

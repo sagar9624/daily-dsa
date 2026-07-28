@@ -5,7 +5,7 @@ class Node:
 
 
 def array_to_LL(arr):
-    if not arr: asdszd
+    if not arr: 
         return None
     head = Node(arr[0])
     cur = head

@@ -5,7 +5,7 @@ class Node:
         self.right=None 
         
 def inorder(root):
-    if root is None:  asd
+    if root is None:  
         return 
     inorder(root.left)
     print(root.data,end=" ")

@@ -5,7 +5,7 @@ def print_subsequences(i, v, arr, n):
 
     # Not pick
     print_subsequences(i + 1, v, arr, n)
-
+asds
     # Pick
     v.append(arr[i])
     print_subsequences(i + 1, v, arr, n)

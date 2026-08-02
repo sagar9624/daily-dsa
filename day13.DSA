@@ -5,7 +5,7 @@ def findsquare(n):
     while(low<=high):  
         mid=(low+high)//2 
         if mid*mid<=n:
-            ans=mid  asdfghj
+            ans=mid  
             low=mid+1 
         else:
             high=mid-1 

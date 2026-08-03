@@ -10,7 +10,7 @@ def minimum_bananas(arr,n,h):
     low=1 
     high=max(arr) 
     ans=high 
-    while(low<=high):
+    while(low<=high):  asdfgiyhoulk
         mid=(low+high)//2 
         if time_to_eat(arr,n,mid)<=h:
             ans=mid 

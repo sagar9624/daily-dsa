@@ -4,7 +4,7 @@ def f(n):
     prior_2 = 1
     prior_1 = 1
     for i in range(2, n + 1):
-        cur = prior_1 + prior_2
+        cur = prior_1 + prior_2  asdfgh
         prior_2 = prior_1
         prior_1 = cur
     return cur
